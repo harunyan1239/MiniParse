@@ -165,8 +165,8 @@
         if (combatant["name"] === "YOU") {
             combatant["name"] = combatant["name"].replace("YOU", myname);
         }
-        else if (combatant["name"].includes("YOU")) {
-        combatant["name"] = combatant["name"].replace("(YOU)", "");
+        else if (combatant["name"].includes(" (YOU)")) {
+        combatant["name"] = combatant["name"].replace(" (YOU)", "");
         }
         return combatant["name"];
     }
