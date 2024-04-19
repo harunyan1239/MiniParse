@@ -364,6 +364,9 @@
 				if(combatant.job == 0 && ptindex != -1){
 				    combatant.job = partymember[ptindex].job;
 				}
+                else if(combatant.job == 0 && combatantName == "Limit Break"){
+                    combatant.job = "limit break"
+                }
                 else if(combatant.job == 0 && combatantName.indexOf(" (") != -1){
                     combatant.job = "pet"
                 }
